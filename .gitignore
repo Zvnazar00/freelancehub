@@ -1,0 +1,18 @@
+.env
+!.env.example
+_to_delete/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+logs/
+
+# Python / tooling caches anywhere in the tree
+__pycache__/
+*.pyc
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+*.egg-info/
+.coverage
+htmlcov/
