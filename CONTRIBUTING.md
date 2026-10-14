@@ -53,3 +53,5 @@ Conventions this codebase follows. Read the design documents first:
    - backend: `ruff check . && ruff format --check . && mypy && pytest`
    - mobile: `npm run check` (type check, lint, tests)
 4. Documentation is updated.
+
+The CI workflow (`.github/workflows/ci.yml`) runs the same checks on every push and pull request.

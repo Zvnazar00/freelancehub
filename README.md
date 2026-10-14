@@ -1,5 +1,7 @@
 # FreelanceHub
 
+[![CI](https://github.com/Zvnazar00/freelancehub/actions/workflows/ci.yml/badge.svg)](https://github.com/Zvnazar00/freelancehub/actions/workflows/ci.yml)
+
 **Time tracking, invoicing and earnings for freelancers — a full-stack mobile app (React Native + FastAPI).**
 
 Track time with a timer that survives app restarts and bad networks, bill it with invoices that always add up,
@@ -75,7 +77,8 @@ cd mobile && npm install && npx expo start             # scan the QR code with E
 ```
 
 On Windows the same steps are in `scripts/start-backend.cmd`, `scripts/seed-demo.cmd` and `scripts/test-backend.cmd`.
-Tests: `docker compose exec api pytest` and `cd mobile && npm run check`.
+Tests: `docker compose exec api pytest` and `cd mobile && npm run check`. The same checks run on every push in
+[GitHub Actions](.github/workflows/ci.yml) (backend against a real PostgreSQL 16).
 
 ## Status
 
